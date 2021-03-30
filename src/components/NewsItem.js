@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
  class NewsItem extends Component {
-    constructor(props) {
-        super(props);
-        
-    }
+  
     chuyenDoiURL = (str) => {
             // Chuyển hết sang chữ thường
             str = str.toLowerCase();     

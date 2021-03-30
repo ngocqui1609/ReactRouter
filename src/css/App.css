@@ -41,4 +41,11 @@ ul.navbar-nav.ml-auto li a {
   display: block;
   padding: 10px 12px;
 }
-img.rong100{width: 100%;}
+#mainNav .navbar-nav>li>a.active {
+  /* color: #fdcc52!important; */
+  background-color: transparent;
+  color: white;
+  background: #242424;
+}
+
+img.rong100 {width:100%; }
