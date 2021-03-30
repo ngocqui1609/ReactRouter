@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
-
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 class News extends Component {
     render() {
         return (
@@ -22,7 +27,7 @@ class News extends Component {
       <div className="col-4">
         <div className="card-deck">
           <div className="card">
-            <a href="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/800x400" alt="for react router" /></a>  
+            <Link to="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/800x400" alt="for react router" /></Link>  
             <div className="card-body">
               <h4 className="card-title">Tin tuc so 2</h4>
               <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat rerum sed ratione accusantium eaque, ad eligendi officia inventore magnam alias in assumenda delectus deleniti blanditiis. Quam delectus optio qui eum!</p>
@@ -34,7 +39,7 @@ class News extends Component {
       <div className="col-4">
         <div className="card-deck">
           <div className="card">
-            <a href="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/800x400" alt="for react router" /></a>  
+            <Link to="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/800x400" alt="for react router" /></Link>  
             <div className="card-body">
               <h4 className="card-title">Tin tuc so 2</h4>
               <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat rerum sed ratione accusantium eaque, ad eligendi officia inventore magnam alias in assumenda delectus deleniti blanditiis. Quam delectus optio qui eum!</p>
@@ -46,7 +51,7 @@ class News extends Component {
       <div className="col-4">
         <div className="card-deck">
           <div className="card">
-            <a href="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/800x400" alt="for react router" /></a>  
+            <Link to="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/800x400" alt="for react router" /></Link>  
             <div className="card-body">
               <h4 className="card-title">Tin tuc so 2</h4>
               <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat rerum sed ratione accusantium eaque, ad eligendi officia inventore magnam alias in assumenda delectus deleniti blanditiis. Quam delectus optio qui eum!</p>
@@ -58,7 +63,7 @@ class News extends Component {
       <div className="col-4">
         <div className="card-deck">
           <div className="card">
-            <a href="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/800x400" alt="for react router" /></a>  
+            <Link to="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/800x400" alt="for react router" /></Link>  
             <div className="card-body">
               <h4 className="card-title">Tin tuc so 2</h4>
               <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat rerum sed ratione accusantium eaque, ad eligendi officia inventore magnam alias in assumenda delectus deleniti blanditiis. Quam delectus optio qui eum!</p>
@@ -70,7 +75,7 @@ class News extends Component {
       <div className="col-4">
         <div className="card-deck">
           <div className="card">
-            <a href="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/800x400" alt="for react router" /></a>  
+            <Link to="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/800x400" alt="for react router" /></Link>  
             <div className="card-body">
               <h4 className="card-title">Tin tuc so 2</h4>
               <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat rerum sed ratione accusantium eaque, ad eligendi officia inventore magnam alias in assumenda delectus deleniti blanditiis. Quam delectus optio qui eum!</p>
@@ -82,7 +87,7 @@ class News extends Component {
       <div className="col-4">
         <div className="card-deck">
           <div className="card">
-            <a href="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/800x400" alt="for react router" /></a>  
+            <Link to="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/800x400" alt="for react router" /></Link>  
             <div className="card-body">
               <h4 className="card-title">Tin tuc so 2</h4>
               <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat rerum sed ratione accusantium eaque, ad eligendi officia inventore magnam alias in assumenda delectus deleniti blanditiis. Quam delectus optio qui eum!</p>
@@ -94,7 +99,7 @@ class News extends Component {
       <div className="col-4">
         <div className="card-deck">
           <div className="card">
-            <a href="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/800x400" alt="for react router" /></a>  
+            <Link to="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/800x400" alt="for react router" /></Link>  
             <div className="card-body">
               <h4 className="card-title">Tin tuc so 2</h4>
               <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat rerum sed ratione accusantium eaque, ad eligendi officia inventore magnam alias in assumenda delectus deleniti blanditiis. Quam delectus optio qui eum!</p>
@@ -106,7 +111,7 @@ class News extends Component {
       <div className="col-4">
         <div className="card-deck">
           <div className="card">
-            <a href="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/800x400" alt="for react router" /></a>  
+            <Link to="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/800x400" alt="for react router" /></Link>  
             <div className="card-body">
               <h4 className="card-title">Tin tuc so 2</h4>
               <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat rerum sed ratione accusantium eaque, ad eligendi officia inventore magnam alias in assumenda delectus deleniti blanditiis. Quam delectus optio qui eum!</p>

@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
-
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 class NewsDetail extends Component {
     render() {
         return (
@@ -34,30 +39,30 @@ class NewsDetail extends Component {
       <div className="col-12">
         <div className="card-deck">
           <div className="card">
-            <a href="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/500x300/" alt="react router demo" /></a>   
+            <Link to="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/500x300/" alt="react router demo" /></Link>   
             <div className="card-body">
-              <h4 className="card-title">Title</h4>
+              <h4 className="card-title">Title 1</h4>
               <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus blanditiis laborum numquam aperiam natus vitae, similique perferendis aliquam dolor sit autem ducimus repellendus corporis ea rerum repellat aspernatur veniam? Ducimus!</p>
             </div>
           </div>
           <div className="card">
-            <a href="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/500x300/" alt="react router demo" /></a>   
+            <Link to="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/500x300/" alt="react router demo" /></Link>   
             <div className="card-body">
-              <h4 className="card-title">Title</h4>
+              <h4 className="card-title">Title 2</h4>
               <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus blanditiis laborum numquam aperiam natus vitae, similique perferendis aliquam dolor sit autem ducimus repellendus corporis ea rerum repellat aspernatur veniam? Ducimus!</p>
             </div>
           </div>
           <div className="card">
-            <a href="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/500x300/" alt="react router demo" /></a>   
+            <Link to="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/500x300/" alt="react router demo" /></Link>   
             <div className="card-body">
-              <h4 className="card-title">Title</h4>
+              <h4 className="card-title">Title 3</h4>
               <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus blanditiis laborum numquam aperiam natus vitae, similique perferendis aliquam dolor sit autem ducimus repellendus corporis ea rerum repellat aspernatur veniam? Ducimus!</p>
             </div>
           </div>
           <div className="card">
-            <a href="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/500x300/" alt="react router demo" /></a>   
+            <Link to="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/500x300/" alt="react router demo" /></Link>   
             <div className="card-body">
-              <h4 className="card-title">Title</h4>
+              <h4 className="card-title">Title 4</h4>
               <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus blanditiis laborum numquam aperiam natus vitae, similique perferendis aliquam dolor sit autem ducimus repellendus corporis ea rerum repellat aspernatur veniam? Ducimus!</p>
             </div>
           </div>
