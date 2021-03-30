@@ -14,21 +14,11 @@ class DieuHuongURL extends Component {
         return (
             <div>
                  <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/home">
-            <Home />
-          </Route>
-          <Route path="/tin">
-            <News />
-          </Route>
-          <Route path="/tin-chi-tiet">
-            <NewsDetail />
-          </Route>
-          <Route path="/lien-he">
-            <Contact />
-          </Route>
+                 <Route exact path="/" component={Home} />                   
+                    <Route exact path="/home" component={Home} />                   
+                    <Route exact path="/tin" component={News} />                   
+                    <Route exact path="/tin-tuc/:slug.:id.html" component={NewsDetail} />                   
+                    <Route exact path="/lien-he" component={Contact} />          
         </Switch>
             </div>
         );

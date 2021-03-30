@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import NewsItem from './NewsItem';
+import dl from './dulieu.json';
 class News extends Component {
+ 
+  
     render() {
+      // var so = [1,3,4,5,6,9];
+      // var so2 = so.map((value, key) => value*3 + " va chi so la : " + key);
+      // console.log(so2);
+
+    
+       
+      
         return (
             <div>
                <div>
@@ -24,102 +29,25 @@ class News extends Component {
   {/* begin tintuc */}
   <div className="container">
     <div className="row mt-3">
-      <div className="col-4">
-        <div className="card-deck">
-          <div className="card">
-            <Link to="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/800x400" alt="for react router" /></Link>  
-            <div className="card-body">
-              <h4 className="card-title">Tin tuc so 2</h4>
-              <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat rerum sed ratione accusantium eaque, ad eligendi officia inventore magnam alias in assumenda delectus deleniti blanditiis. Quam delectus optio qui eum!</p>
-            </div>
-          </div>
-        </div>
-        <hr />
-      </div>
-      <div className="col-4">
-        <div className="card-deck">
-          <div className="card">
-            <Link to="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/800x400" alt="for react router" /></Link>  
-            <div className="card-body">
-              <h4 className="card-title">Tin tuc so 2</h4>
-              <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat rerum sed ratione accusantium eaque, ad eligendi officia inventore magnam alias in assumenda delectus deleniti blanditiis. Quam delectus optio qui eum!</p>
-            </div>
-          </div>
-        </div>
-        <hr />
-      </div>
-      <div className="col-4">
-        <div className="card-deck">
-          <div className="card">
-            <Link to="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/800x400" alt="for react router" /></Link>  
-            <div className="card-body">
-              <h4 className="card-title">Tin tuc so 2</h4>
-              <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat rerum sed ratione accusantium eaque, ad eligendi officia inventore magnam alias in assumenda delectus deleniti blanditiis. Quam delectus optio qui eum!</p>
-            </div>
-          </div>
-        </div>
-        <hr />
-      </div>
-      <div className="col-4">
-        <div className="card-deck">
-          <div className="card">
-            <Link to="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/800x400" alt="for react router" /></Link>  
-            <div className="card-body">
-              <h4 className="card-title">Tin tuc so 2</h4>
-              <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat rerum sed ratione accusantium eaque, ad eligendi officia inventore magnam alias in assumenda delectus deleniti blanditiis. Quam delectus optio qui eum!</p>
-            </div>
-          </div>
-        </div>
-        <hr />
-      </div>
-      <div className="col-4">
-        <div className="card-deck">
-          <div className="card">
-            <Link to="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/800x400" alt="for react router" /></Link>  
-            <div className="card-body">
-              <h4 className="card-title">Tin tuc so 2</h4>
-              <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat rerum sed ratione accusantium eaque, ad eligendi officia inventore magnam alias in assumenda delectus deleniti blanditiis. Quam delectus optio qui eum!</p>
-            </div>
-          </div>
-        </div>
-        <hr />
-      </div>
-      <div className="col-4">
-        <div className="card-deck">
-          <div className="card">
-            <Link to="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/800x400" alt="for react router" /></Link>  
-            <div className="card-body">
-              <h4 className="card-title">Tin tuc so 2</h4>
-              <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat rerum sed ratione accusantium eaque, ad eligendi officia inventore magnam alias in assumenda delectus deleniti blanditiis. Quam delectus optio qui eum!</p>
-            </div>
-          </div>
-        </div>
-        <hr />
-      </div>
-      <div className="col-4">
-        <div className="card-deck">
-          <div className="card">
-            <Link to="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/800x400" alt="for react router" /></Link>  
-            <div className="card-body">
-              <h4 className="card-title">Tin tuc so 2</h4>
-              <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat rerum sed ratione accusantium eaque, ad eligendi officia inventore magnam alias in assumenda delectus deleniti blanditiis. Quam delectus optio qui eum!</p>
-            </div>
-          </div>
-        </div>
-        <hr />
-      </div>
-      <div className="col-4">
-        <div className="card-deck">
-          <div className="card">
-            <Link to="/tin-chi-tiet"><img className="card-img-top" src="http://placehold.it/800x400" alt="for react router" /></Link>  
-            <div className="card-body">
-              <h4 className="card-title">Tin tuc so 2</h4>
-              <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat rerum sed ratione accusantium eaque, ad eligendi officia inventore magnam alias in assumenda delectus deleniti blanditiis. Quam delectus optio qui eum!</p>
-            </div>
-          </div>
-        </div>
-        <hr />
-      </div>
+
+          {
+
+              dl.map((value,key) => {
+                  return (
+                      <NewsItem key={key}  
+                      tinId={value.id}
+                      anh={value.anh} 
+                      tieuDe={value.tieuDe}
+                        trichDan={value.trichDan}> </NewsItem>
+                  )
+              }) 
+          }
+    
+
+     
+
+ 
+     
     </div>  
   </div>
   {/* end  tintuc */}
@@ -130,4 +58,4 @@ class News extends Component {
     }
 }
 
-export default News;
+export default News; 
